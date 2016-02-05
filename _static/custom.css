@@ -1,0 +1,13 @@
+.wy-side-nav-search > a, .wy-side-nav-search > a:hover
+{
+    text-indent: -9999px;
+    width: 100%;
+    background: url('kabbage-platform-logo.png') center center no-repeat;
+    background-size: contain;
+    min-height: 41px;
+}
+
+.wy-side-nav-search > .version
+{
+    display: none;
+}
