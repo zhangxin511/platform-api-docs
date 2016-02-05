@@ -1,8 +1,8 @@
-Funding API Documentation
-=========================
+Kabbage Platform API
+====================
 
-This documentation covers the Kabbage Funding Platform APIs and describes how to
-consume them.
+This documentation covers the Kabbage Platform APIs and describes how to consume
+them.
 
 .. toctree::
     :caption: Getting Started
@@ -42,8 +42,3 @@ Endpoints
     :glob:
 
     funding/*
-
-.. toctree::
-    :caption: TODOs
-
-    todo
