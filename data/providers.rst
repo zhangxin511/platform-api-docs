@@ -14,23 +14,12 @@ Get available providers
 
     [
         {
-            "Name": "PayPal",
-            "Roles": [
-                "Payment",
-                "Disbursement",
-                "Data"
-            ]
+            "Name": "PayPal"
         },
         {
-            "Name": "AuthorizeNET",
-            "Roles": [
-                "Data"
-            ]
+            "Name": "AuthorizeNET"
         },
         {
-            "Name": "Acculynk",
-            "Roles": [
-                "Disbursement"
-            ]
+            "Name": "Acculynk"
         }
     ]

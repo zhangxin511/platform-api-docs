@@ -1,5 +1,5 @@
-Kabbage Platform API
-====================
+Funding API Documentation
+=========================
 
 This documentation covers the Kabbage Platform APIs and describes how to consume
 them.
@@ -42,3 +42,10 @@ Endpoints
     :glob:
 
     funding/*
+
+.. toctree::
+    :caption: Audit
+    :maxdepth: 2
+    :glob:
+
+    audit/*
