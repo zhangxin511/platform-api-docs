@@ -16,20 +16,23 @@ Get business data
 
     {
         "Name": "Rollins' Rolls",
+        "AlternativeName": "",
         "Structure": "SoleProprietorship",
         "Industry": "RestaurantsBars",
         "EntityId": "384870193",
         "DateStarted": "1990-01-01",
-        "BusinessAddress": {
-            "CountryCode": "US",
-            "Address": {
-                "Line1": "410 Fenimore Street",
-                "Line2": "",
-                "City": "Windsor",
-                "StateCode": "VA",
-                "PostalCode": "48012"
+        "Addresses": [
+            {
+                "CountryCode": "US",
+                "Address": {
+                    "Line1": "410 Fenimore Street",
+                    "Line2": "",
+                    "City": "Windsor",
+                    "StateCode": "VA",
+                    "PostalCode": "48012"
+                }
             }
-        },
+        ],
         "Phones": [
             {
                 "PhoneType": "Business",
@@ -39,11 +42,16 @@ Get business data
                 "PhoneType": "Business",
                 "PhoneNumber": "(555) 555-4988"
             }
-        ]
+        ],
+        "Metadata": {
+            "NumberOfEmployees": "60"
+        }
     }
 
 
 Fields within the ``Address`` object will vary according to the ``CountryCode`` specified.
+
+The ``Metadata`` object is a key-value store that can hold any custom fields.
 
 
 **PhoneType values**
@@ -65,20 +73,23 @@ Create business data
 
     {
         "Name": "Rollins' Rolls",
+        "AlternativeName": "",
         "Structure": "SoleProprietorship",
         "Industry": "RestaurantsBars",
         "EntityId": "384870193",
         "DateStarted": "1990-01-01",
-        "BusinessAddress": {
-            "CountryCode": "US",
-            "Address": {
-                "Line1": "410 Fenimore Street",
-                "Line2": "",
-                "City": "Windsor",
-                "StateCode": "VA",
-                "PostalCode": "48012"
+        "Addresses": [
+            {
+                "CountryCode": "US",
+                "Address": {
+                    "Line1": "410 Fenimore Street",
+                    "Line2": "",
+                    "City": "Windsor",
+                    "StateCode": "VA",
+                    "PostalCode": "48012"
+                }
             }
-        },
+        ],
         "Phones": [
             {
                 "PhoneType": "Business",
@@ -88,7 +99,10 @@ Create business data
                 "PhoneType": "Business",
                 "PhoneNumber": "(555) 555-4988"
             }
-        ]
+        ],
+        "Metadata": {
+            "NumberOfEmployees": "60"
+        }
     }
 
 **Response**
@@ -113,20 +127,23 @@ Update business data
 
     {
         "Name": "Rollins' Rolls",
+        "AlternativeName": "",
         "Structure": "SoleProprietorship",
         "Industry": "RestaurantsBars",
         "EntityId": "384870193",
         "DateStarted": "1990-01-01",
-        "BusinessAddress": {
-            "CountryCode": "US",
-            "Address": {
-                "Line1": "410 Fenimore Street",
-                "Line2": "",
-                "City": "Windsor",
-                "StateCode": "VA",
-                "PostalCode": "48012"
+        "Addresses": [
+            {
+                "CountryCode": "US",
+                "Address": {
+                    "Line1": "410 Fenimore Street",
+                    "Line2": "",
+                    "City": "Windsor",
+                    "StateCode": "VA",
+                    "PostalCode": "48012"
+                }
             }
-        },
+        ],
         "Phones": [
             {
                 "PhoneType": "Business",
@@ -136,7 +153,10 @@ Update business data
                 "PhoneType": "Business",
                 "PhoneNumber": "(555) 555-4988"
             }
-        ]
+        ],
+        "Metadata": {
+            "NumberOfEmployees": "60"
+        }
     }
 
 **Response**

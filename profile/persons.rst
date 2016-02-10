@@ -24,16 +24,18 @@ Get persons
                 "Last": "Henderson",
                 "Suffix": ""
             },
-            "HomeAddress": {
-                "CountryCode": "US",
-                "Address": {
-                    "Line1": "227 Ashland Place",
-                    "Line2": "",
-                    "City": "Windsor",
-                    "StateCode": "VA",
-                    "PostalCode": "48012"
+            "Addresses": [
+                {
+                    "CountryCode": "US",
+                    "Address": {
+                        "Line1": "227 Ashland Place",
+                        "Line2": "",
+                        "City": "Windsor",
+                        "StateCode": "VA",
+                        "PostalCode": "48012"
+                    }
                 }
-            },
+            ],
             "Phones": [
                 {
                     "PhoneType": "Mobile",
@@ -46,12 +48,16 @@ Get persons
             ],
             "BirthDate": "1965-03-12",
             "TaxIdNumberLastFour": "9000",
-            "AtResidenceSince": "2007-10-01"
+            "Metadata": {
+                "AtResidenceSince": "2007-10-01"
+            }
         }
     ]
 
 
 Fields within the ``Address`` object will vary according to the ``CountryCode`` specified.
+
+The ``Metadata`` object is a key-value store that can hold any custom fields.
 
 
 **PhoneType values**
@@ -80,16 +86,18 @@ Create person
             "Last": "Henderson",
             "Suffix": ""
         },
-        "HomeAddress": {
-            "CountryCode": "US",
-            "Address": {
-                "Line1": "227 Ashland Place",
-                "Line2": "",
-                "City": "Windsor",
-                "StateCode": "VA",
-                "PostalCode": "48012"
+        "Addresses": [
+            {
+                "CountryCode": "US",
+                "Address": {
+                    "Line1": "227 Ashland Place",
+                    "Line2": "",
+                    "City": "Windsor",
+                    "StateCode": "VA",
+                    "PostalCode": "48012"
+                }
             }
-        },
+        ],
         "Phones": [
             {
                 "PhoneType": "Mobile",
@@ -102,7 +110,9 @@ Create person
         ],
         "BirthDate": "1965-03-12",
         "TaxIdNumberLastFour": "9000",
-        "AtResidenceSince": "2007-10-01"
+        "Metadata": {
+            "AtResidenceSince": "2007-10-01"
+        }
     }
 
 **Response**
@@ -133,16 +143,18 @@ Update person
             "Last": "Henderson",
             "Suffix": ""
         },
-        "HomeAddress": {
-            "CountryCode": "US",
-            "Address": {
-                "Line1": "227 Ashland Place",
-                "Line2": "",
-                "City": "Windsor",
-                "StateCode": "VA",
-                "PostalCode": "48012"
+        "Addresses": [
+            {
+                "CountryCode": "US",
+                "Address": {
+                    "Line1": "227 Ashland Place",
+                    "Line2": "",
+                    "City": "Windsor",
+                    "StateCode": "VA",
+                    "PostalCode": "48012"
+                }
             }
-        },
+        ],
         "Phones": [
             {
                 "PhoneType": "Mobile",
@@ -155,7 +167,9 @@ Update person
         ],
         "BirthDate": "1965-03-12",
         "TaxIdNumberLastFour": "9000",
-        "AtResidenceSince": "2007-10-01"
+        "Metadata": {
+            "AtResidenceSince": "2007-10-01"
+        }
     }
 
 **Response**
