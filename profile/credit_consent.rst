@@ -23,7 +23,7 @@ Create credit consent
     }
 
 .. note:: The value for ``CreditPullType`` varies based on the credit reporting
-  agencies the parter uses and in many cases will not be required.
+  agencies the partner uses and in many cases will not be required.
 
 **Reponse**
 

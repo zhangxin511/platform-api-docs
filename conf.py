@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# Kabbage Funding API documentation build configuration file, created by
+# Kabbage Platform API documentation build configuration file, created by
 # sphinx-quickstart on Mon Jan 11 16:07:18 2016.
 #
 # This file is execfile()d with the current directory set to its
@@ -48,7 +48,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Kabbage Funding API'
+project = u'Kabbage Platform API'
 copyright = u'2016, Kabbage, Inc.'
 author = u'Kabbage, Inc.'
 
@@ -203,7 +203,7 @@ html_static_path = ['_static']
 #html_search_scorer = 'scorer.js'
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'KabbageFundingAPIdoc'
+htmlhelp_basename = 'KabbagePlatformAPIdoc'
 
 def setup(app):
     app.add_stylesheet('custom.css?v=1')
@@ -228,7 +228,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  (master_doc, 'KabbageFundingAPI.tex', u'Kabbage Funding API Documentation',
+  (master_doc, 'KabbagePlatformAPI.tex', u'Kabbage Platform API Documentation',
    u'Kabbage, Inc.', 'manual'),
 ]
 
@@ -258,7 +258,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'kabbagefundingapi', u'Kabbage Funding API Documentation',
+    (master_doc, 'KabbagePlatformAPI', u'Kabbage Platform API Documentation',
      [author], 1)
 ]
 
@@ -272,8 +272,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  (master_doc, 'KabbageFundingAPI', u'Kabbage Funding API Documentation',
-   author, 'KabbageFundingAPI', 'One line description of project.',
+  (master_doc, 'KabbagePlatformAPI', u'Kabbage Platform API Documentation',
+   author, 'KabbagePlatformAPI', 'One line description of project.',
    'Miscellaneous'),
 ]
 
