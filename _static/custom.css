@@ -2,8 +2,8 @@
 {
     text-indent: -9999px;
     width: 100%;
-    background: url('kabbage-platform-logo.png') center center no-repeat;
-    background-size: contain;
+    background: url('kabbage-platform-logo.png') center center no-repeat !important;
+    background-size: contain !important;
     min-height: 41px;
 }
 
