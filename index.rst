@@ -1,4 +1,4 @@
-Funding API Documentation
+Platform API Documentation
 =========================
 
 This documentation covers the Kabbage Platform APIs and describes how to consume
