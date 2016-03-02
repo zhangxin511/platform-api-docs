@@ -124,12 +124,12 @@ Create person
 
 
 
-Update person
--------------
+Update a person
+---------------
 
 ::
 
-    PATCH /v2/Profile/{user-id}/Persons/{person-id}
+    PUT /v2/Profile/{user-id}/Persons/{person-id}
 
 **Request**
 
@@ -177,4 +177,40 @@ Update person
 ::
 
     HTTP/1.1 204 OK
-    Content-Type: application/json;charset=UTF-8
+
+
+Partially update a person
+-------------------------
+
+For partially updating the a person the Kabbage Platform supports `json patch
+<http://jsonpatch.com/>`_ requests.  This allows you to specify an array of
+changes to apply.  Each change is specified as an operation, the path to the
+target field, and for some operations a target value.
+
+ The following example request updates the person's first name, adds a new
+phone number and removes the ``Line2`` value of the first address.
+
+::
+
+    PATCH /v2/Profile/{user-id}/Persons/{person-id}
+
+**Request**
+
+.. code:: json
+
+    [
+        { "op": "add", "path": "/Name/First", "value": "Steve" },
+        { "op": "add", "path": "/Phones/-", "value":
+            {
+                "PhoneType": "Mobile",
+                "PhoneNumber": "(555) 555-5345"
+            }
+        },
+        { "op": "remove", "path": "/Addresses/Address/0/Line2"}
+    ]
+
+**Response**
+
+::
+
+    HTTP/1.1 204 OK
