@@ -6,22 +6,21 @@ Change user's password
 
 This endpoint is used to change a user's password if they know their current
 password. This endpoint requires tokens created using the
-:ref:`client-credntials-grant` grant flow.
+:ref:`password-grant` grant flow.
 
 **Request**
 
 ::
 
     POST /auth/password/change HTTP/1.1
-    Authorization: Basic Q0xJRU5UX0lEOkNMSUVOVF9TRUNSRVQ=
+    Authorization: Bearer TOKEN
     Content-Type: application/json
 
 .. code:: json
 
     {
-        "username": "USERNAME",
-        "currentPassword": "PASSWORD",
-        "newPassword": "NEW PASSWORD"
+        "CurrentPassword": "PASSWORD",
+        "NewPassword": "NEW PASSWORD"
     }
 
 **Response**
@@ -52,7 +51,7 @@ a new password. This endpoint requires tokens created using the
 .. code:: json
 
     {
-        "username": "USERNAME"
+        "Username": "USERNAME"
     }
 
 **Response**
@@ -103,7 +102,7 @@ grant flow.
 .. code:: json
 
     {
-        "newPassword": "PASSWORD"
+        "NewPassword": "PASSWORD"
     }
 
 **Response**
