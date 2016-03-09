@@ -71,8 +71,16 @@ grant flow.
 
 ::
 
-    GET /auth/password/reset/{token}/validate HTTP/1.1
+    POST /auth/password/reset/validate HTTP/1.1
     Authorization: Basic Q0xJRU5UX0lEOkNMSUVOVF9TRUNSRVQ=
+    Content-Type: application/json
+
+.. code:: json
+
+    {
+        "Username": "USERNAME",
+        "Token": "TOKEN"
+    }
 
 **Response**
 
@@ -95,13 +103,15 @@ grant flow.
 
 ::
 
-    POST /auth/password/reset/{token}/process HTTP/1.1
+    POST /auth/password/reset/process HTTP/1.1
     Authorization: Basic Q0xJRU5UX0lEOkNMSUVOVF9TRUNSRVQ=
     Content-Type: application/json
 
 .. code:: json
 
     {
+        "Username": "USERNAME",
+        "Token": "TOKEN",
         "NewPassword": "PASSWORD"
     }
 
