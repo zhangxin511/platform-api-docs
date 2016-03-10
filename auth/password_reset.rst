@@ -5,8 +5,8 @@ Change user's password
 ----------------------
 
 This endpoint is used to change a user's password if they know their current
-password. This endpoint requires tokens created using the
-:ref:`password-grant` grant flow.
+password. This endpoint requires tokens created using the :ref:`password-grant`
+grant flow.
 
 **Request**
 
@@ -45,7 +45,7 @@ a new password. This endpoint requires tokens created using the
 ::
 
     POST /auth/password/reset HTTP/1.1
-    Authorization: Basic Q0xJRU5UX0lEOkNMSUVOVF9TRUNSRVQ=
+    Authorization: Bearer TOKEN
     Content-Type: application/json
 
 .. code:: json
@@ -72,7 +72,7 @@ grant flow.
 ::
 
     POST /auth/password/reset/validate HTTP/1.1
-    Authorization: Basic Q0xJRU5UX0lEOkNMSUVOVF9TRUNSRVQ=
+    Authorization: Bearer TOKEN
     Content-Type: application/json
 
 .. code:: json
@@ -104,7 +104,7 @@ grant flow.
 ::
 
     POST /auth/password/reset/process HTTP/1.1
-    Authorization: Basic Q0xJRU5UX0lEOkNMSUVOVF9TRUNSRVQ=
+    Authorization: Bearer TOKEN
     Content-Type: application/json
 
 .. code:: json
