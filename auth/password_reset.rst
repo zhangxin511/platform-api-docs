@@ -71,7 +71,7 @@ grant flow.
 
 ::
 
-    POST /auth/password/reset/validate HTTP/1.1
+    POST /auth/password/reset/token/validate HTTP/1.1
     Authorization: Bearer TOKEN
     Content-Type: application/json
 
@@ -103,7 +103,7 @@ grant flow.
 
 ::
 
-    POST /auth/password/reset/process HTTP/1.1
+    POST /auth/password/reset/token/process HTTP/1.1
     Authorization: Bearer TOKEN
     Content-Type: application/json
 
