@@ -5,9 +5,9 @@ Funding V2 API docs
 The docs are built using reStructured Text and
 [Sphinx](http://www.sphinx-doc.org/en/stable/index.html).
 
-To get started, install Sphinx (requires [Python](https://www.python.org/)):
+To get started, install [Python](https://www.python.org/) dependencies:
 ```
-pip install sphinx sphinx-autobuild
+pip install -r requirements.txt
 ```
 
 Then use make to build the html:
