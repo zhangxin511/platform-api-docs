@@ -29,7 +29,9 @@ Get account
         "LastDisbursement": "1900-01-01T00:00:00Z",
         "Flags": [
             {
-                "Category": "Unauthorized",
+                "Categories": [
+                    "Unauthorized"
+                ],
                 "Reason": "LostAccess",
                 "CreatedDate": "2015-02-01T12:00:00Z",
                 "ExpirationDate": "2015-02-07T12:00:00Z"
