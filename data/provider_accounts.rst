@@ -37,7 +37,7 @@ Retrieve all user provider account details
 		  {
 			"Reason": "Unauthorized",
 			"Category": "Revoked",
-			"CreationDate": "2010-02-01T00:00:00Z"
+			"CreatedDate": "2010-02-01T00:00:00Z"
 		  }
 		],
 		"ExpirationDate": "2018-01-01T00:00:00Z",
@@ -52,13 +52,13 @@ Retrieve all user provider account details
 
 ``Properties`` are provider specific and may not be required.
 
-The provider account includes a ``Status`` within the response. Enumerated values include:
+Zero or more ``Flags`` may be returned as a result of issues encountered while processing the provider account. These flags will contain a ``Category``, ``Reason``, and ``CreatedDate``.
+
+``Status`` will be one of the following:
 
 -  **Complete** if the provider account has successfully connected
 -  **Error** if the data platform failed while adding the provider account
 -  **Processing** if the data platform is currently communicating with the provider account
-
-One or more flags may be returned as a result of issues encountered while processing the provider account. These flags will contain a ``Category`` and ``Reason``.
 
 ``Category`` will be one of the following:
 
