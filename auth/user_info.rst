@@ -16,5 +16,5 @@ Get the current user
 .. code:: json
 
     {
-        "sub": "248289761001"
+        "UserId": "248289761001"
     }
