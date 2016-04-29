@@ -8,7 +8,7 @@ Get money movement accounts
 
 ::
 
-	GET /Funding/{user-id}/MoneyMovementAccounts
+	GET /v2/Funding/{user-id}/MoneyMovementAccounts
 
 **Response**
 
@@ -57,7 +57,7 @@ Get single money movement account
 
 .. code:: json
 
-	GET /Funding/{user-id}/MoneyMovementAccounts/{money-movement-account-id}
+	GET /v2/Funding/{user-id}/MoneyMovementAccounts/{money-movement-account-id}
 
 
 **Response**
