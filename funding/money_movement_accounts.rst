@@ -18,6 +18,7 @@ Get money movement accounts
 	  {
 		"Id": 123,
 		"Name": "Business Checking",
+		"ProviderName": "ACH",
 		"CreatedDate": "2015-01-01T00:00:00Z",
 		"DisbursementOptions": {
 			"Status": "Active",
@@ -31,6 +32,7 @@ Get money movement accounts
 	  {
 		"Id": 125,
 		"Name": "Business Checking 2",
+		"ProviderName": "ACH",
 		"CreatedDate": "2015-01-01T00:00:00Z",
 		"DisbursementOptions": {
 			"Status": "Unavailable",
