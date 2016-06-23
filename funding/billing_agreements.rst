@@ -33,18 +33,17 @@ Get billing agreements
             "MoneyMovementAccountId": "123",
             "StartingDate": "2015-01-01T00:00:00Z",
             "EndingDate": "2015-01-01T00:00:00Z",
-            "Status": "ACTIVE",
+            "Status": "Approved",
             "RemainingBalance": 1000.00
         }
     ]
 
 **Status values:**
 
-- **ACTIVE**: The user has accepted the agreement and the agreement can be used
-  for processing autodraft payments.
-- **CANCELLED**: The user did not accept the agreement during the creation
-  process.
-- **DEACTIVATED**: The user accepted the agreement but later deactivated it via
+- **Approved**: The user has accepted the agreement and the agreement can be
+  used for processing autodraft payments.
+- **Pending**: The user has not yet acceptted the agreement.
+- **Cancelled**: The user accepted the agreement but later deactivated it via
   the provider.
 
 Get single billing agreement
