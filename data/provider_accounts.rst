@@ -19,7 +19,7 @@ Retrieve all user provider account details
 	  {
 		"Id": 123,
 		"Name": "Business Checking",
-		"ProviderName": "BankAccount",
+		"ProviderName": "ACH",
 		"Status": "Complete",
 		"Flags": [],
 		"CreatedDate": "2010-01-01T00:00:00Z",
@@ -31,7 +31,7 @@ Retrieve all user provider account details
 	  {
 		"Id": 120,
 		"Name": "Business Checking 2",
-		"ProviderName": "BankAccount",
+		"ProviderName": "ACH",
 		"Status": "Complete",
 		"Flags": [
 		  {
@@ -101,7 +101,7 @@ Retrieve specific user provider account details
 	{
 	  "Id": 123,
 	  "Name": "Business Checking",
-	  "ProviderName": "BankAccount",
+	  "ProviderName": "ACH",
 	  "Status": "Complete",
 	  "Flags": [],
 	  "ExpirationDate": "2018-01-01T00:00:00Z",
@@ -127,14 +127,14 @@ Connect user provider account
 
 	{
 	  "CallbackUrl": "https://yoursite.com/callback",
-	  "ProviderName": "BankAccount",
+	  "ProviderName": "ACH",
 	  "Parameters": {
 		"...": "...",
 		"...": "..."
 	  }
 	}
-	
-	
+
+
 ``Parameters`` are provider specific and may not be required.
 
 The consuming application should send the user to the ``RedirectUrl`` from the response where they can authenticate and authorize the data platform.  When authentication is complete they will be returned to the ``CallbackUrl`` from the input.
@@ -183,7 +183,7 @@ Requires ``Token`` from the provider account connect POST response.
 	  "ErrorCode": "501",
 	  "ErrorMessage": "Invalid credentials"
 	}
-	
+
 
 Verify user provider account
 ----------------------------
@@ -200,10 +200,10 @@ Verify user provider account
 		"0.12",
 		"0.61"
 	]
-	
+
 The request should contain an array of one or more verification codes.
 
-	
+
 **Response**
 
 ::
@@ -212,7 +212,7 @@ The request should contain an array of one or more verification codes.
 		"Result": "Failed",
 		"RetryAllowed": true
 	}
-	
+
 **Result**
 
 	-  Succeeded
@@ -247,4 +247,3 @@ Delete user provider account
 
 	HTTP/1.1 204 No Content
 	Content-Type: application/json;charset=UTF-8
-	
