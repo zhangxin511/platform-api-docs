@@ -44,6 +44,13 @@ Endpoints
     funding/*
 
 .. toctree::
+    :caption: Descision
+    :maxdepth: 2
+    :glob:
+
+    decision/*
+
+.. toctree::
     :caption: Audit
     :maxdepth: 2
     :glob:
