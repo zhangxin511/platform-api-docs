@@ -40,16 +40,42 @@ Get payment schedule for new loan
 .. code:: json
 
     {
-      "Payments": [
-        {
-          "PaymentDate": "2014-12-09",
-          "PrincipalAmount": 500,
-          "InterestFee": 50
-        },
-        {
-          "PaymentDate": "2014-10-12",
-          "PrincipalAmount": 500,
-          "InterestFee": 50
-        }
-      ]
+        "Payments": [
+            {
+                "PaymentDate": "2016-08-30",
+                "PrincipalAmount": 166.67,
+                "InterestFee": 40,
+                "FeeRate": 0.04
+            },
+            {
+                "PaymentDate": "2016-09-30",
+                "PrincipalAmount": 166.67,
+                "InterestFee": 40,
+                "FeeRate": 0.04
+            },
+            {
+                "PaymentDate": "2016-10-30",
+                "PrincipalAmount": 166.67,
+                "InterestFee": 10,
+                "FeeRate": 0.01
+            },
+            {
+                "PaymentDate": "2016-11-30",
+                "PrincipalAmount": 166.67,
+                "InterestFee": 10,
+                "FeeRate": 0.01
+            },
+            {
+                "PaymentDate": "2016-12-30",
+                "PrincipalAmount": 166.67,
+                "InterestFee": 10,
+                "FeeRate": 0.01
+            },
+            {
+                "PaymentDate": "2017-01-30",
+                "PrincipalAmount": 166.65,
+                "InterestFee": 10,
+                "FeeRate": 0.01
+            }
+        ]
     }
