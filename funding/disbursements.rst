@@ -29,49 +29,37 @@ the loan.
 The ``SignatureRequired`` property indicates an electronic signature must be
 collected.
 
-The ``Agreements`` property contains an array of documents that the user must agree
-to before processing the disbursement. The ``MustDisplay`` property indicates if
-the document must be presented directly. If this is ``true`` the document must be
-displayed inline, otherwise a link to the document URL is acceptable.
+The ``Agreements`` property contains an array of documents that the user should
+view before processing the disbursement. Link headers will be included in the
+response with the URL to retrieve the agreement content. Use the ``Accept``
+header to specify if you would like the documents as HTML (text/html) or PDF
+(application/PDF).
 
 .. code:: json
 
     {
         "DisbursementToken": "f9c17928-5587-4da9-babb-941796efd8f5",
-        "SignatureRequired": true,
+        "SignatureRequired": false,
         "Agreements": [
             {
-                "AgreementId": 123,
-                "AgreementType": "LoanAgreement",
-                "MustDisplay": true,
-                "Files": [
-                    {
-                        "ContentType": "text/html",
-                        "Url": "https://example.org/example.html"
-                    },
-                    {
-                        "ContentType": "application/pdf",
-                        "Url": "https://example.org/example.pdf"
-                    }
-                ]
+                "AgreementType": "LoanAgreement"
             },
             {
-                "AgreementId": 124,
-                "AgreementType": "SECCIAgreemnet",
-                "MustDisplay": false,
-                "Files": [
-                    {
-                        "ContentType": "text/html",
-                        "Url": "https://example.org/example2.html"
-                    },
-                    {
-                        "ContentType": "application/pdf",
-                        "Url": "https://example.org/example2.pdf"
-                    }
-                ]
+                "AgreementType": "SECCIAgreemnet"
+            }
+        ],
+        "Consents": [
+            {
+                "ConsentType": "LoanAgreement",
+                "ConsentText": "By checking the box you consent to Delivery of Disclosure as detailed above."
             }
         ]
     }
+
+::
+    
+    Link: <http://services.kabbage.io/v2/Funding/Disbursement/f9c17928-5587-4da9-babb-941796efd8f5/Agreement/LoanAgreement>; rel=LoanAgrement
+    Link: <http://services.kabbage.io/v2/Funding/Disbursement/f9c17928-5587-4da9-babb-941796efd8f5/Agreement/SECCIAgreemnet>; rel=SECCIAgreemnet
 
 .. _disbursement-complete:
 
@@ -91,15 +79,12 @@ signed and accepted the agreements.
 .. code:: json
 
     {
-        "AcceptedAgreements": [
+        "Consents": [
             {
-                "AgreementId": "123"
-            },
-            {
-                "AgreementId": "124"
+                "ConsentType": "LoanAgreement",
+                "Accepted": true
             }
         ],
-        "Signature": "PP",
         "CallbackUrl": "http://yourdomain.org/callback"
     }
 
