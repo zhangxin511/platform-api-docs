@@ -58,8 +58,8 @@ header to specify if you would like the documents as HTML (text/html) or PDF
 
 ::
     
-    Link: <http://services.kabbage.io/v2/Funding/Disbursement/f9c17928-5587-4da9-babb-941796efd8f5/Agreement/LoanAgreement>; rel=LoanAgrement
-    Link: <http://services.kabbage.io/v2/Funding/Disbursement/f9c17928-5587-4da9-babb-941796efd8f5/Agreement/SECCIAgreemnet>; rel=SECCIAgreemnet
+    Link: <http://services.kabbage.io/v2/Funding/Disbursement/f9c17928-5587-4da9-babb-941796efd8f5/Agreement/LoanAgreement>; rel="LoanAgrement"
+    Link: <http://services.kabbage.io/v2/Funding/Disbursement/f9c17928-5587-4da9-babb-941796efd8f5/Agreement/SECCIAgreemnet>; rel="SECCIAgreement"
 
 .. _disbursement-complete:
 

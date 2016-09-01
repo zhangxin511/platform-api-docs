@@ -126,7 +126,7 @@ Clear flag
 
 ::
 
-    POST /v2/Data/{user-id}/Decisions/Flags/{id}/Clear
+    POST /v2/Decision/{user-id}/Decisions/Flags/{id}/Clear
 
 Provides the ability to clear decision flag.
 
