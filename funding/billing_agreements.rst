@@ -121,8 +121,7 @@ in the request.
         "BillingAgreementId": "87BAEA1C-D842-4605-8ED4-F5EB54203267",
         "RedirectUrl": "http://kabbage.io/redirect",
         "StartingDate": "2015-01-01T00:00:00Z",
-        "EndingDate": "2015-01-01T00:00:00Z",
-        "Status": "Accepted"
+        "EndingDate": "2015-01-01T00:00:00Z"
     }
 
 If the request contained the id of a provider account that does not support

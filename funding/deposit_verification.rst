@@ -31,7 +31,7 @@ Get verification status
 - **NotApplicable**: The specified money movement account does not need to have
   micro-deposit verification performed.
 
-Verify deplosit amounts
+Verify deposit amounts
 -----------------------
 
 **Request**
