@@ -48,6 +48,7 @@ Get persons
             ],
             "BirthDate": "1965-03-12",
             "TaxIdNumberLastFour": "9000",
+            "Role": "PrimaryApplicant",
             "Metadata": {
                 "AtResidenceSince": "2007-10-01"
             }
