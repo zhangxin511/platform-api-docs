@@ -20,10 +20,10 @@ Get credit consent
 
     {
         "ConsentDate": "2016-09-01T00:00:00Z",
-        "ExpirationDate": ""
+        "ExpirationDate": "2016-10-01T00:00:00Z"
     }
 
-
+``ExpirationDate`` will only be present if it can expire
 
 
 Create credit consent
