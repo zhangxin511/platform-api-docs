@@ -7,6 +7,25 @@ complete the application process. A partner may choose to request a new consent
 from the user after some period to enable the platform to request an updated
 report from their credit agency.
 
+Get credit consent
+--------------------------------
+
+::
+
+    GET /v2/Profile/{user-id}/CreditConsents
+
+**Response**
+
+.. code:: json
+
+    {
+        "ConsentDate": "2016-09-01T00:00:00Z",
+        "ExpirationDate": ""
+    }
+
+
+
+
 Create credit consent
 ---------------------
 
