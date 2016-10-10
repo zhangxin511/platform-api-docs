@@ -15,7 +15,7 @@ Get document requests
     [
         {
             "DocumentRequestId": 427,
-            "Status": "Created",
+            "Status": "Open",
             "ReferenceNumber": "X-12345",
             "RequestedTypes": [
                 "DriversLicense",
@@ -64,20 +64,7 @@ Update document request
 
 **Response**
 
-.. code:: json
-
-    {
-        "DocumentRequestId": 427,
-        "Status": "Completed",
-        "ReferenceNumber": "X-12345",
-        "RequestedTypes": [
-            "DriversLicense",
-            "UtilityBill",
-            "ArticlesOfIncorporation"
-        ],
-        "CreatedBy": "Jimmy",
-        "CratedDate": "2015-01-15T12:00:00Z"
-    }
+HTTP Status code ``204 No Content`` for success
 
 List available document types
 -----------------------------
