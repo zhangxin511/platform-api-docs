@@ -15,7 +15,15 @@ Get account
 .. code:: json
 
     {
-        "Status": "Open",
+        "Status": {
+            "AccountStatus": "Open",
+            "Reasons": [
+                {
+                    "Flagged",
+                    "ChargedOff"
+                }
+            ]
+        },
         "CreditLimit": 200.00,
         "AvailableCredit": 50.00,
         "Balance": 50.00,
@@ -45,11 +53,13 @@ Get account
 
 ``Balance`` is the current balance on the account based upon disbursements, payments, and fees.
 
-**Status values:**
+**Status.AccountStatus values:**
 
 -  **Open** indicates that the funding account is active and the user can disburse funds.
 -  **Suspended** indicates that the funding account cannot currently disburse funds because of a flag that has been put on the account.
 -  **Closed** indicates that the funding account has been permanently closed.
+
+''Reasons'' on ''Status'' will be a string(s) representing the detail for negative statuses
 
 **ProductType values:**
 
