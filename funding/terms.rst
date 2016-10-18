@@ -18,7 +18,7 @@ Get terms
             "Product": "kabbage6",
             "Length": 6,
             "FeeRate": 0.04,
-            "MinimumDisbursementAmount": 
+            "MinimumDisbursementAmount": 100.00
         },
         {
             "TermId": 124,
