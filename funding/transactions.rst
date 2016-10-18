@@ -22,7 +22,7 @@ Get transactions
 
 .. note::
     ``StartDate`` and ``EndDate`` will have a default time of ``00:00:00`` if a time is not provided in the request.
-	
+
 
 **Response**
 
@@ -66,26 +66,3 @@ The Link header provides a "next" link to facilitate paging. Requesting the
 supplied URL will return the next page of transactions with the same page size
 if any more exist. If no transactions match the given request an empty array
 will be returned.
-
-Get single transaction
-----------------------
-
-::
-
-    GET /v2/Funding/{user-id}/Transactions/{reference-id}
-
-.. code:: json
-
-
-    {
-        "Amount": 25.00,
-        "Date": "2014-08-29T00:00:00Z",
-        "Fee": 0,
-        "Status": "Posted",
-        "Type": "Disbursement",
-        "Description": "Loan Disbursement",
-        "MoneyMovementAccountId": 5432,
-        "FeeRate": 0.04,
-        "TermLength": 12,
-        "Balance": 125.00
-    }
