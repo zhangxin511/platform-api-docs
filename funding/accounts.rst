@@ -16,7 +16,7 @@ Get account
 
     {
         "Status": {
-            "AccountStatus": "Open",
+            "AccountStatus": "Suspended",
             "Reasons": [
                 {
                     "Flagged",
