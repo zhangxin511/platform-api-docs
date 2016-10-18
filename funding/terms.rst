@@ -17,16 +17,19 @@ Get terms
             "TermId": 123,
             "Product": "kabbage6",
             "Length": 6,
-            "FeeRate": 0.04
+            "FeeRate": 0.04,
+            "MinimumDisbursementAmount": 
         },
         {
             "TermId": 124,
             "Product": "kabbage12",
             "Length": 12,
-            "FeeRate": 0.03
+            "FeeRate": 0.03,
+            "MinimumDisbursementAmount": 5000.00
         },
     ]
 
+''MinimumDisbursementAmount'' is a nullable value representing the minimum amount which can be requested per ''Product''
 
 Get payment schedule for new loan
 ---------------------------------
