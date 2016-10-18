@@ -165,9 +165,9 @@ Requires ``Token`` from the provider account connect POST response.
 
 ``Result`` will be one of the following:
 
--  **Processing** if the data platform is still connecting to the provider
+-  **Incomplete** if the user has not yet completed connecting to the provider
 -  **Success** if the data platform has successfully connected to the provider
--  **Error** if the data platform has received an error connecting to the provider
+-  **Abandoned** if the data platform has received an error connecting to the provider
 -  **Duplicate** if the provider account was already added to the data platform under another user
 -  **Blacklisted** if the provider account has been added to a blacklist in the data platform
 
