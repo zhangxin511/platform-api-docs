@@ -42,7 +42,8 @@ Get transactions
             "Status": "Posted",
             "Type": "Payment",
             "Description": "Loan Payment",
-            "MoneyMovementAccountId": 5432
+            "MoneyMovementAccountId": 5432,
+            "Balance": 125.00
         },
         {
             "Amount": 25.00,
@@ -53,7 +54,8 @@ Get transactions
             "Description": "Loan Disbursement",
             "MoneyMovementAccountId": 5432,
             "FeeRate": 0.04,
-            "TermLength": 12
+            "TermLength": 12,
+            "Balance": 150.00
         }
     ]
 
@@ -84,5 +86,6 @@ Get single transaction
         "Description": "Loan Disbursement",
         "MoneyMovementAccountId": 5432,
         "FeeRate": 0.04,
-        "TermLength": 12
+        "TermLength": 12,
+        "Balance": 125.00
     }
