@@ -29,7 +29,7 @@ Get terms
         },
     ]
 
-''MinimumDisbursementAmount'' is a nullable value representing the minimum amount which can be requested per ''Product''
+''MinimumDisbursementAmount'' is an optional value representing the minimum amount which can be requested per ''Product''
 
 Get payment schedule for new loan
 ---------------------------------
