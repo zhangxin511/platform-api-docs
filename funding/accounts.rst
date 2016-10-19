@@ -18,10 +18,8 @@ Get account
         "Status": {
             "AccountStatus": "Suspended",
             "Reasons": [
-                {
-                    "Flagged",
-                    "ChargedOff"
-                }
+                "Flagged",
+                "ChargedOff"
             ]
         },
         "CreditLimit": 200.00,
