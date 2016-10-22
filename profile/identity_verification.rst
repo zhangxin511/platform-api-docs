@@ -8,7 +8,7 @@ Get identity verification status
 
 ::
 
-    GET /v2/Profile/{user-id}/PersonalInfo/Verification
+    GET /v2/Profile/{user-id}/Persons/{person-id}/Verification
 
 **Response**
 
@@ -31,7 +31,7 @@ Initiate identity verification
 
 ::
 
-    POST /v2/Profile/{user-id}/PersonalInfo/Verification/Initiate
+    POST /v2/Profile/{user-id}/Persons/{person-id}/Verification/Initiate
 
 **Response**
 
