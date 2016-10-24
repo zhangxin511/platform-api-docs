@@ -185,40 +185,6 @@ Requires ``Token`` from the provider account connect POST response.
 	}
 
 
-Verify user provider account
-----------------------------
-
-::
-
-	POST /v2/Data/{user-id}/ProviderAccounts/{provider-account-id}/Verify
-
-**Request**
-
-.. code:: json
-
-	[
-		"0.12",
-		"0.61"
-	]
-
-The request should contain an array of one or more verification codes.
-
-
-**Response**
-
-::
-
-	{
-		"Result": "Failed",
-		"RetryAllowed": true
-	}
-
-**Result**
-
-	-  Succeeded
-	-  Failed
-
-
 Refresh user provider account
 -----------------------------
 
