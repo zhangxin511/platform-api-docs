@@ -16,7 +16,7 @@ Get verification status
 
     {
         "Status": "NotVerified",
-        "LastAttempt": false,
+        "IsLastAttempt": false,
     }
 
 **Status values:**
@@ -54,5 +54,7 @@ Verify deposit amounts
 
     {
         "Status": "NotVerified",
-        "LastAttempt": false,
+        "IsLastAttempt": false,
     }
+
+''Status'' values are the same as GET for DepositVerification
