@@ -21,7 +21,7 @@ If a decison has been made for the user, the response will contain a
 -  **Accept**
 -  **Decline**
 -  **NotAccept**
--  **Pended**
+-  **Pend**
 
 If the user has not provided enough information for a decision to be generated,
 the result will be **Incomplete** and the ``Reasons`` will be populated with
