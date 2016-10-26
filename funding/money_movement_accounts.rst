@@ -78,6 +78,7 @@ Get single money movement account
   {
 	"Id": 123,
 	"Name": "Business Checking",
+	"ProviderName": "ACH",
 	"CreatedDate": "2015-01-01T00:00:00Z",
 	"DisbursementOptions": {
 		"Status": "Active",
@@ -85,6 +86,6 @@ Get single money movement account
 	},
 	"PaymentOptions": {
 		"Status": "Active",
-		"Priority": 1
+		"IsDefault": true
 	}
   }
