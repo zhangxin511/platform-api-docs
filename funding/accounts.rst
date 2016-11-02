@@ -26,6 +26,7 @@ Get account
         "AvailableCredit": 50.00,
         "Balance": 50.00,
         "PastDueBalance": 5.00,
+        "DaysDelinquent": 2,
         "NextPayment": {
             "DueDate": "2015-01-01T00:00:00Z",
             "MinimumAmount": 10.00
