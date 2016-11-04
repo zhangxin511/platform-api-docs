@@ -20,7 +20,8 @@ Get account
             "Reasons": [
                 "Flagged",
                 "ChargedOff"
-            ]
+            ],
+            "DaysDelinquent": 2
         },
         "CreditLimit": 200.00,
         "AvailableCredit": 50.00,
