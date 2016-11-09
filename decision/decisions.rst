@@ -9,7 +9,7 @@ Retrieve most recent decision
 
 ::
 
-    GET /v2/Decision/{user-id}/Decisions
+    GET /v2/Decision/{user-id}/
 
 If a decison has been made for the user, the response will contain a
 ``Result``.

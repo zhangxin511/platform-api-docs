@@ -22,9 +22,8 @@ Get identity verification status
 
 -  **Unknown** - Verification has not been attempted.
 -  **Verified** - Verification passed.
+-  **ReattemptRequired** - Verification has failed, client may try again.
 -  **Failed** - Verification failed.
--  **ReattemptRequired** - Verification with partial tax ID failed and
-   needs to be reattempted with full tax ID.
 
 Initiate identity verification
 ------------------------------
@@ -38,8 +37,31 @@ Initiate identity verification
 .. code:: json
 
     {
+        "Status": "Verified"
+    }
+
+**Statuses**
+
+-  **Verified** - Verification passed.
+-  **ReattemptRequired** - Verification has failed, client may try again.
+-  **Failed** - User failed identity verification.
+-  **RequiresQuestions** - User needs to answer questions to complete verification.
+
+**ReattemptRequired**
+
+A response with status **ReattemptRequired** indicates the client should use /v2/Profile/Persons to update
+Person with better information. If only 4 digits of the TaxId have been provided, Person should be updated
+with the full TaxId.
+
+**Questions**
+
+A response with status **RequiresQuestions** will contain a ``Questions`` array.
+
+.. code:: json
+
+    {
         "Id": "13a0f730-fa90-41c8-a1e3-d08adfdc7023",
-        "Result": "RequiresQuestions",
+        "Status": "RequiresQuestions",
         "Questions": [
             {
                 "QuestionId": "1",
@@ -54,12 +76,7 @@ Initiate identity verification
         ]
     }
 
-**Result**
 
--  **Success** - Identity verification succeeded.
--  **RequiresQuestions** - User needs to answer questions to complete verification.
--  **NotFound** - User was not found based upon specified personal information. The user should update their personal information and reattempt verification.
--  **Failed** - User failed identity verification.
 
 Submit challenge question answers
 ---------------------------------

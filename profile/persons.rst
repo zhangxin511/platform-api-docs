@@ -111,6 +111,7 @@ Create person
         ],
         "BirthDate": "1965-03-12",
         "TaxIdNumberLastFour": "9000",
+        "TaxIdNumberFull": "123459000",
         "Metadata": {
             "AtResidenceSince": "2007-10-01"
         }
@@ -168,6 +169,7 @@ Update a person
         ],
         "BirthDate": "1965-03-12",
         "TaxIdNumberLastFour": "9000",
+        "TaxIdNumberFull": "123459000",
         "Metadata": {
             "AtResidenceSince": "2007-10-01"
         }
