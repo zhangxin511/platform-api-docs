@@ -43,7 +43,8 @@ Get account
                 "CreatedDate": "2015-02-01T12:00:00Z",
                 "ExpirationDate": "2015-02-07T12:00:00Z"
             }
-        ]
+        ],
+        "NextStatementDate": "2015-01-21T00:00:00Z"
     }
 
 ``CreditLimit`` is the total line extended to the user.
