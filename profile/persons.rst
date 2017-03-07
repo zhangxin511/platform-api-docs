@@ -209,7 +209,7 @@ phone number and removes the ``Line2`` value of the first address.
                 "PhoneNumber": "(555) 555-5345"
             }
         },
-        { "op": "remove", "path": "/Addresses/Address/0/Line2"}
+        { "op": "remove", "path": "/Addresses/0/Address/Line2"}
     ]
 
 **Response**
