@@ -83,7 +83,7 @@ Submit challenge question answers
 
 ::
 
-    POST /v2/Profile/{user-id}/IdentityVerification/ChallengeQuestions
+    POST /v2/Profile/{user-id}/Persons/{person-id}/Verification/ChallengeQuestions
 
 **Request**
 
