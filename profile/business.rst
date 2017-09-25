@@ -19,6 +19,8 @@ Get business data
         "AlternativeName": "",
         "Structure": "SoleProprietorship",
         "Industry": "RestaurantsBars",
+        "IndustryClassificationId": "7225",
+        "IndustryClassification": "Restaurants and Other Eating Places",
         "EntityId": "384870193",
         "DateStarted": "1990-01-01",
         "Addresses": [
