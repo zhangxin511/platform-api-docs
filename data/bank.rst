@@ -8,7 +8,7 @@ Search for banks
 ----------------
 
 You can search for banks by name or by routing number. Searching by name is the
-prefered method, some routing numbers may be valid but not mapped to a bank.
+preferred method, some routing numbers may be valid but not mapped to a bank.
 
 ::
 
@@ -45,7 +45,7 @@ Add bank credentials
 --------------------
 
 This endpoint allows for the adding of an account and routing number (or your
-countries equivelent).
+countries equivalent).
 
 ::
 
@@ -63,6 +63,6 @@ countries equivelent).
 **Response**
 
 ::
-    
+
     HTTP/1.1 204 No Content
     Content-Type: application/json;charset=UTF-8

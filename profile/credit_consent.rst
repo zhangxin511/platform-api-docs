@@ -44,6 +44,6 @@ Create credit consent
 .. note:: The value for ``CreditPullType`` varies based on the credit reporting
   agencies the partner uses and in many cases will not be required.
 
-**Reponse**
+**Response**
 
 HTTP status code ``204 No Content`` for success

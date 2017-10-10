@@ -24,7 +24,7 @@ the loan.
         "MoneyMovementAccountId": 1452
     }
 
-**Reponse**
+**Response**
 
 The ``SignatureRequired`` property indicates an electronic signature must be
 collected.
@@ -57,7 +57,7 @@ header to specify if you would like the documents as HTML (text/html) or PDF
     }
 
 ::
-    
+
     Link: <http://services.kabbage.io/v2/Funding/Disbursement/f9c17928-5587-4da9-babb-941796efd8f5/Agreement/LoanAgreement>; rel="LoanAgrement"
     Link: <http://services.kabbage.io/v2/Funding/Disbursement/f9c17928-5587-4da9-babb-941796efd8f5/Agreement/SECCIAgreemnet>; rel="SECCIAgreement"
 

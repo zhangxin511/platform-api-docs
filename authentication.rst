@@ -20,7 +20,7 @@ ACCESS_TOKEN``.  For example:
     GET /data/v2/providers HTTP/1.1
     Authorization: Bearer Q0xJRU5UX0lEOkNMSUVOVF9TRUNSRVQ=
 
-If the provided access token is invalid you will recieve a ``401 Unauthorized``
+If the provided access token is invalid you will receive a ``401 Unauthorized``
 response.
 
 .. todo:: simple flow diagram
