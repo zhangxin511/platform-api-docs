@@ -38,7 +38,7 @@ Initiate password reset
 If the user has forgotten their password, this endpoint can be used to create a
 password reset token that will be sent to the user which will allow them to set
 a new password. This endpoint requires tokens created using the
-:ref:`client-credntials-grant` grant flow.
+:ref:`client-credentials-grant` grant flow.
 
 **Request**
 
@@ -63,8 +63,8 @@ a new password. This endpoint requires tokens created using the
 Validate password reset token
 -----------------------------
 
-This endpoint can be used to validte a password reset token presented by a user.
-This endpoint requires tokens created using the :ref:`client-credntials-grant`
+This endpoint can be used to validate a password reset token presented by a user.
+This endpoint requires tokens created using the :ref:`client-credentials-grant`
 grant flow.
 
 **Request**
@@ -95,8 +95,8 @@ Reset password using token
 --------------------------
 
 This endpoint can be used to use a password reset token to change a users
-password. After a sucessful password reset, the token will no longer be valid.
-This endpoint requires tokens created using the :ref:`client-credntials-grant`
+password. After a successful password reset, the token will no longer be valid.
+This endpoint requires tokens created using the :ref:`client-credentials-grant`
 grant flow.
 
 **Request**

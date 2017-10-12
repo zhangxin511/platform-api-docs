@@ -34,7 +34,7 @@ payment.
         "RedirectUrl": "https://services.kabbage.com"
     }
 
-If a previously submitted payment is still processing you may recieve a ``409
+If a previously submitted payment is still processing you may receive a ``409
 Conflict`` response.
 
 Get payment status

@@ -8,7 +8,7 @@ Get terms
 
     GET /v2/Funding/{user-id}/Terms
 
-**Reponse**
+**Response**
 
 .. code:: json
 

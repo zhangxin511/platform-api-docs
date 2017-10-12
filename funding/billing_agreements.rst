@@ -42,7 +42,7 @@ Get billing agreements
 
 - **Approved**: The user has accepted the agreement and the agreement can be
   used for processing autodraft payments.
-- **Pending**: The user has not yet acceptted the agreement.
+- **Pending**: The user has not yet accepted the agreement.
 - **Cancelled**: The user accepted the agreement but later deactivated it via
   the provider.
 

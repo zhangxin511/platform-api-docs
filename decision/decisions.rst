@@ -11,7 +11,7 @@ Retrieve most recent decision
 
     GET /v2/Decision/{user-id}/
 
-If a decison has been made for the user, the response will contain a
+If a decision has been made for the user, the response will contain a
 ``Result``.
 
 ``Result`` will be one of the following:
@@ -29,7 +29,7 @@ codes indicating what information is missing.
 
 If the user has provided enough information, but a decision has not yet been
 completed the result will be **Processing**  Clients should continue to check
-the endpoint untill a decision is available.
+the endpoint until a decision is available.
 
 In the case that ``Result`` is **NotAccept** or **Decline**, ``Reasons``
 will contain one or more codes to explain the result.

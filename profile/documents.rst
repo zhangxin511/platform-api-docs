@@ -90,7 +90,7 @@ Get documents associated to document request
 
     GET /v2/Profile/{user-id}/DocumentRequests/{document-request-id}/Documents
 
-**Reponse**
+**Response**
 
 .. code:: json
 

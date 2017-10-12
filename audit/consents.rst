@@ -37,7 +37,7 @@ Create a new consent
         "Accepted": true
     }
 
-**Reponse**
+**Response**
 
 HTTP status code ``201 Created`` for success
 

@@ -19,7 +19,7 @@ username and the client secret as the password.  If the client is unable to use
 basic authentication, the client ID and client secret may be included in the
 request body as ``client_id`` and ``client_secret``.
 
-.. _client-credntials-grant:
+.. _client-credentials-grant:
 
 Client Credentials
 ~~~~~~~~~~~~~~~~~~
