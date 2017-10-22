@@ -6,19 +6,21 @@ Get transactions
 
 ::
 
-    GET /v2/Funding/{user-id}/Transactions?StartDate=2016-01-01&EndDate=2016-03-01
+    GET /v2/Funding/{user-id}/Transactions?StartDate=2016-01-01&EndDate=2016-03-01&PageSize=50
 
 **Request Parameters**
 
-+--------------+---------------------------------------------------------------+
-| Parameter    | Description                                                   |
-+==============+===============================================================+
-| StartDate    | Find transactions after this date and time.                   |
-+--------------+---------------------------------------------------------------+
-| EndDate      | Find transactions before this date and time.                  |
-+--------------+---------------------------------------------------------------+
-| PageSize     | Number of transactions to be returned, maximum of 100.        |
-+--------------+---------------------------------------------------------------+
+.. tabularcolumns:: |l|L|L|
+
++--------------+----------------------------------------------------------+----------------------------------------------+
+| Parameter    | Description                                              | Default (if omitted)                         |
++==============+==========================================================+==============================================+
+| StartDate    | Find transactions after this date and time.              | 90 days before current UTC date and time.    |
++--------------+----------------------------------------------------------+----------------------------------------------+
+| EndDate      | Find transactions before this date and time.             | Current UTC date and time.                   |
++--------------+----------------------------------------------------------+----------------------------------------------+
+| PageSize     | Number of transactions to be returned, maximum of 500    | 100                                          |
++--------------+----------------------------------------------------------+----------------------------------------------+
 
 .. note::
     ``StartDate`` and ``EndDate`` will have a default time of ``00:00:00`` if a time is not provided in the request.
