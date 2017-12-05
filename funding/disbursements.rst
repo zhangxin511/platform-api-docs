@@ -1,5 +1,43 @@
 Disbursements
 =============
+.. _loal-purpose-options:
+
+Loan Purpose Options
+--------------------------
+
+This endpoint is used to get the loan purpose options specific to partner based on userId.  The
+response contains list of loan purpose values available for partner.
+
+::
+
+    OPTIONS /v2/Funding/{user-id}/Disbursement
+
+**Request**
+
+::
+
+    OPTIONS /v2/Funding/{user-id}/Disbursement
+    Authorization: Bearer Q0xJRU5UX0lEOkNMSUVOVF9TRUNSRVQ=
+
+**Response**
+
+List of loan purposes for the partner.
+
+.. code:: json
+
+    {
+        "9": "Buy, lease or repair equipment, technology or vehicles",
+        "10": "Buy or lease storage",
+        "11": "Cover routine business costs",
+        "12": "Expand or remodel my physical business space",
+        "13": "Hire employees",
+        "14": "Open another location",
+        "15": "Pay for marketing or advertising expenses",
+        "16": "Purchase inventory or supplies",
+        "17": "Purchase another business",
+        "18": "Update my web or mobile presence"
+    }
+
 
 .. _disbursement-initiate:
 
