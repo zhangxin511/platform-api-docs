@@ -31,6 +31,7 @@ import shlex
 # ones.
 extensions = [
     'sphinx.ext.todo',
+    'sphinxcontrib.httpdomain'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -49,7 +50,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Kabbage Platform API'
-copyright = u'2016, Kabbage, Inc.'
+copyright = u'2017, Kabbage, Inc.'
 author = u'Kabbage, Inc.'
 
 # The version info for the project you're documenting, acts as replacement for
