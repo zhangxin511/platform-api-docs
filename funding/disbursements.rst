@@ -25,18 +25,48 @@ List of loan purposes for the partner.
 
 .. code:: json
 
-    {
-        "9": "Buy, lease or repair equipment, technology or vehicles",
-        "10": "Buy or lease storage",
-        "11": "Cover routine business costs",
-        "12": "Expand or remodel my physical business space",
-        "13": "Hire employees",
-        "14": "Open another location",
-        "15": "Pay for marketing or advertising expenses",
-        "16": "Purchase inventory or supplies",
-        "17": "Purchase another business",
-        "18": "Update my web or mobile presence"
-    }
+    [
+        {
+            "Id": 10,
+            "Description": "Buy or lease storage"
+        },
+        {
+            "Id": 9,
+            "Description": "Buy, lease or repair equipment, technology or vehicles"
+        },
+        {
+            "Id": 11,
+            "Description": "Cover routine business costs"
+        },
+        {
+            "Id": 12,
+            "Description": "Expand or remodel my physical business space"
+        },
+        {
+            "Id": 13,
+            "Description": "Hire employees"
+        },
+        {
+            "Id": 14,
+            "Description": "Open another location"
+        },
+        {
+            "Id": 15,
+            "Description": "Pay for marketing or advertising expenses"
+        },
+        {
+            "Id": 17,
+            "Description": "Purchase another business"
+        },
+        {
+            "Id": 16,
+            "Description": "Purchase inventory or supplies"
+        },
+        {
+            "Id": 18,
+            "Description": "Update my web or mobile presence"
+        }
+    ]
 
 
 .. _disbursement-initiate:
