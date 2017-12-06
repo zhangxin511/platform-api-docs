@@ -1,6 +1,6 @@
 Disbursements
 =============
-.. _loal-purpose-options:
+.. _loan-purpose-options:
 
 Loan Purpose Options
 --------------------------
@@ -90,6 +90,7 @@ the loan.
         "Amount": 1000.00,
         "TermId": 127,
         "MoneyMovementAccountId": 1452
+        "LoanPurposeId": 10
     }
 
 **Response**
