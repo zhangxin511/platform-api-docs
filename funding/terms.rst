@@ -31,6 +31,27 @@ Get terms
 
 ''MinimumDisbursementAmount'' is an optional value representing the minimum amount which can be requested per ''Product''
 
+Get single term
+---------------
+
+::
+
+    GET /v2/Funding/{user-id}/Terms/{term-id}
+
+**Response**
+
+.. code:: json
+
+    [
+        {
+            "TermId": 123,
+            "Product": "kabbage6",
+            "Length": 6,
+            "FeeRate": 0.04,
+            "MinimumDisbursementAmount": 100.00
+        }
+    ]
+
 Get payment schedule for new loan
 ---------------------------------
 
