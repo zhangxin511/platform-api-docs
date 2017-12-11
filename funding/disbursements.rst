@@ -25,48 +25,64 @@ List of loan purposes for the partner.
 
 .. code:: json
 
-    [
-        {
-            "Id": 10,
-            "Description": "Buy or lease storage"
-        },
-        {
-            "Id": 9,
-            "Description": "Buy, lease or repair equipment, technology or vehicles"
-        },
-        {
-            "Id": 11,
-            "Description": "Cover routine business costs"
-        },
-        {
-            "Id": 12,
-            "Description": "Expand or remodel my physical business space"
-        },
-        {
-            "Id": 13,
-            "Description": "Hire employees"
-        },
-        {
-            "Id": 14,
-            "Description": "Open another location"
-        },
-        {
-            "Id": 15,
-            "Description": "Pay for marketing or advertising expenses"
-        },
-        {
-            "Id": 17,
-            "Description": "Purchase another business"
-        },
-        {
-            "Id": 16,
-            "Description": "Purchase inventory or supplies"
-        },
-        {
-            "Id": 18,
-            "Description": "Update my web or mobile presence"
+    {
+        "POST": {
+            "body": {
+                "type": "object",
+                "object": "LoanPurpose",
+                "LoanPurpose": {
+                    "Id": {
+                        "type": "int"
+                    },
+                    "Description": {
+                        "type": "string"
+                    },
+                    "Values": [
+                        {
+                            "Id": 10,
+                            "Description": "Buy or lease storage"
+                        },
+                        {
+                            "Id": 9,
+                            "Description": "Buy, lease or repair equipment, technology or vehicles"
+                        },
+                        {
+                            "Id": 11,
+                            "Description": "Cover routine business costs"
+                        },
+                        {
+                            "Id": 12,
+                            "Description": "Expand or remodel my physical business space"
+                        },
+                        {
+                            "Id": 13,
+                            "Description": "Hire employees"
+                        },
+                        {
+                            "Id": 14,
+                            "Description": "Open another location"
+                        },
+                        {
+                            "Id": 15,
+                            "Description": "Pay for marketing or advertising expenses"
+                        },
+                        {
+                            "Id": 17,
+                            "Description": "Purchase another business"
+                        },
+                        {
+                            "Id": 16,
+                            "Description": "Purchase inventory or supplies"
+                        },
+                        {
+                            "Id": 18,
+                            "Description": "Update my web or mobile presence"
+                        }
+                    ]
+                }
+            }
         }
-    ]
+    }
 
 
 .. _disbursement-initiate:
