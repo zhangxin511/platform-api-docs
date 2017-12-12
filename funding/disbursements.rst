@@ -43,7 +43,7 @@ List of loan purposes for the partner.
                         "type": "int",
                         "required": true
                     },
-                    "LoanPurpose": {
+                    "LoanPurposeId": {
                         "type": "int",
                         "values": [
                             10,
