@@ -57,12 +57,13 @@ Get transactions
             "MoneyMovementAccountId": 5432,
             "FeeRate": 0.04,
             "TermLength": 12,
-            "Balance": 150.00
+            "Balance": 150.00,
+            "DisbursementToken": "87BAEA1C-D842-4605-8ED4-F5EB54203267"
         }
     ]
 
 .. note::
-    ``FeeRate`` and ``TermLength`` are only provided for ``Disbursement`` transactions.
+    ``FeeRate``, ``TermLength``, and ``DisbursementToken`` are only provided for ``Disbursement`` transactions.
 
 The Link header provides a "next" link to facilitate paging. Requesting the
 supplied URL will return the next page of transactions with the same page size
