@@ -30,52 +30,72 @@ List of loan purposes for the partner.
             "body": {
                 "type": "object",
                 "object": {
+                    "Amount": {
+                        "type": "object",
+                        "object": {},
+                        "required": true
+                    },
+                    "TermId": {
+                        "type": "int",
+                        "required": true
+                    },
+                    "MoneyMovementAccountId": {
+                        "type": "int",
+                        "required": true
+                    },
                     "LoanPurpose": {
-                        "Id": {
-                            "type": "int"
-                        },
-                        "Description": {
-                            "type": "string"
-                        },
+                        "type": "int",
                         "values": [
+                            10,
+                            9,
+                            11,
+                            12,
+                            13,
+                            14,
+                            15,
+                            17,
+                            16,
+                            18
+                        ],
+                        "descriptions": [
                             {
-                                "Id": 10,
+                                "Value": 10,
                                 "Description": "Buy or lease storage"
                             },
                             {
-                                "Id": 9,
+                                "Value": 9,
                                 "Description": "Buy, lease or repair equipment, technology or vehicles"
                             },
                             {
-                                "Id": 11,
+                                "Value": 11,
                                 "Description": "Cover routine business costs"
                             },
                             {
-                                "Id": 12,
+                                "Value": 12,
                                 "Description": "Expand or remodel my physical business space"
                             },
                             {
-                                "Id": 13,
+                                "Value": 13,
                                 "Description": "Hire employees"
                             },
                             {
-                                "Id": 14,
+                                "Value": 14,
                                 "Description": "Open another location"
                             },
                             {
-                                "Id": 15,
+                                "Value": 15,
                                 "Description": "Pay for marketing or advertising expenses"
                             },
                             {
-                                "Id": 17,
+                                "Value": 17,
                                 "Description": "Purchase another business"
                             },
                             {
-                                "Id": 16,
+                                "Value": 16,
                                 "Description": "Purchase inventory or supplies"
                             },
                             {
-                                "Id": 18,
+                                "Value": 18,
                                 "Description": "Update my web or mobile presence"
                             }
                         ]
