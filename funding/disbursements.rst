@@ -5,8 +5,9 @@ Disbursements
 Loan Purpose Options
 --------------------------
 
-This endpoint is used to get the loan purpose options specific to partner based on userId.  The
-response contains list of loan purpose values available for partner.
+This endpoint is used to get the loan purpose options specific to partner
+based on userId. OPTIONS call will return documentation object of 
+InitiateDisbursement with available HTTP options and list of LoanPurpose.
 
 ::
 
@@ -21,7 +22,7 @@ response contains list of loan purpose values available for partner.
 
 **Response**
 
-List of loan purposes for the partner.
+InitiateDisbursement POST contarct whith list of LoanPurpose.
 
 .. code:: json
 
