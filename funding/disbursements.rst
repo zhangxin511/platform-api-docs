@@ -1,5 +1,111 @@
 Disbursements
 =============
+.. _loan-purpose-options:
+
+Loan Purpose Options
+--------------------------
+
+This endpoint is used to get the loan purpose options specific to partner
+based on userId. OPTIONS call will return documentation object of 
+InitiateDisbursement with available HTTP options and list of LoanPurpose.
+
+::
+
+    OPTIONS /v2/Funding/{user-id}/Disbursement
+
+**Request**
+
+::
+
+    OPTIONS /v2/Funding/{user-id}/Disbursement
+    Authorization: Bearer Q0xJRU5UX0lEOkNMSUVOVF9TRUNSRVQ=
+
+**Response**
+
+InitiateDisbursement POST contract whith list of LoanPurpose.
+
+.. code:: json
+
+    {
+        "POST": {
+            "body": {
+                "type": "object",
+                "object": {
+                    "Amount": {
+                        "type": "object",
+                        "object": {},
+                        "required": true
+                    },
+                    "TermId": {
+                        "type": "int",
+                        "required": true
+                    },
+                    "MoneyMovementAccountId": {
+                        "type": "int",
+                        "required": true
+                    },
+                    "LoanPurposeId": {
+                        "type": "int",
+                        "values": [
+                            10,
+                            9,
+                            11,
+                            12,
+                            13,
+                            14,
+                            15,
+                            17,
+                            16,
+                            18
+                        ],
+                        "descriptions": [
+                            {
+                                "Value": 10,
+                                "Description": "Buy or lease storage"
+                            },
+                            {
+                                "Value": 9,
+                                "Description": "Buy, lease or repair equipment, technology or vehicles"
+                            },
+                            {
+                                "Value": 11,
+                                "Description": "Cover routine business costs"
+                            },
+                            {
+                                "Value": 12,
+                                "Description": "Expand or remodel my physical business space"
+                            },
+                            {
+                                "Value": 13,
+                                "Description": "Hire employees"
+                            },
+                            {
+                                "Value": 14,
+                                "Description": "Open another location"
+                            },
+                            {
+                                "Value": 15,
+                                "Description": "Pay for marketing or advertising expenses"
+                            },
+                            {
+                                "Value": 17,
+                                "Description": "Purchase another business"
+                            },
+                            {
+                                "Value": 16,
+                                "Description": "Purchase inventory or supplies"
+                            },
+                            {
+                                "Value": 18,
+                                "Description": "Update my web or mobile presence"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    }
+
 
 .. _disbursement-initiate:
 
@@ -22,6 +128,7 @@ the loan.
         "Amount": 1000.00,
         "TermId": 127,
         "MoneyMovementAccountId": 1452
+        "LoanPurposeId": 10
     }
 
 **Response**
