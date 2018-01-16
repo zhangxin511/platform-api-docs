@@ -22,7 +22,7 @@ InitiateDisbursement with available HTTP options and list of LoanPurpose.
 
 **Response**
 
-InitiateDisbursement POST contarct whith list of LoanPurpose.
+InitiateDisbursement POST contract whith list of LoanPurpose.
 
 .. code:: json
 
