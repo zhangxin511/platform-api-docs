@@ -23,7 +23,8 @@ Get document requests
                 "ArticlesOfIncorporation"
             ],
             "CreatedBy": "Steve",
-            "CreatedDate": "2015-01-15T12:00:00Z"
+            "CreatedDate": "2015-01-15T12:00:00Z",
+            "RequestPurposes": []
         },
         {
             "DocumentRequestId": 378,
@@ -33,7 +34,10 @@ Get document requests
                 "VoidedChecks"
             ],
             "CreatedBy": "Bob",
-            "CreatedDate": "2015-01-01T12:00:00Z"
+            "CreatedDate": "2015-01-01T12:00:00Z",
+            "RequestPurposes": [
+                "HigherLineInput"
+            ]
         }
     ]
 
