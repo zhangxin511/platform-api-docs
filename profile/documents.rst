@@ -36,7 +36,9 @@ Get document requests
             "CreatedBy": "Bob",
             "CreatedDate": "2015-01-01T12:00:00Z",
             "RequestPurposes": [
-                "HigherLineInput"
+                "HigherLineInput",
+                "IdentityVerification",
+                "AccountOwnerVerification"
             ]
         }
     ]
@@ -49,6 +51,9 @@ Get document requests
    is a final state.
 -  **Canceled** - An administrator has manually marked the request as no
    longer needed. This is a final state.
+**Document Request RequestPurposes**
+
+-  A list of purposes tied the document request.
 
 
 Update document request
